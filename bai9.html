@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra ky tu co trong mang khong</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  function demKyTu(arr, kytu) {
+    let count = 0;
+    for( let i = 0; i < arr.length; i++) {
+      if( arr[i] === kytu ) {
+        count ++;
+      }
+    }
+    return count > 0 ? count : -1;
+  }
+  let charArr = ['a','b','a','d'];
+  let charCheck = 'a';
+  let result = demKyTu(charArr, charCheck);
+  alert(`${charCheck} xuat hien ${result} lan`)
+
+</script>

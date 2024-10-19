@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tra ve so nguyen co gia tri nho nhat</title>
+</head>
+<body onload="minValue(this.value)">
+
+</body>
+</html>
+<script>
+  function minValue ( min ) {
+    let a = parseInt( prompt('Nhap so nguyen thu nhat') );
+    let b = parseInt( prompt('Nhap so nguyen thu hai') );
+    let c = parseInt( prompt('Nhap so nguyen thu ba') );
+    if ( a < b && a < c ) {
+       min = a;
+    }else if ( b < a && b < c ) {
+      min = b;
+    }else {
+      min = c;
+    }
+    alert(`Gia tri nho nhat la ${min}`);
+  }
+
+
+</script>

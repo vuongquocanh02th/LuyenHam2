@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh dien tich va chu vi hinh tron</title>
+</head>
+<body onload="display()">
+
+</body>
+</html>
+<script>
+  function chuvi(bankinh){
+    let chuvi = 2 * bankinh * 3.14;
+    return chuvi;
+  }
+  function dientich(bankinh){
+    let dientich = Math.pow( bankinh, 2 ) * 3.14;
+    return dientich;
+  }
+  function display(){
+      let r = parseFloat(prompt('Nhap ban kinh hinh tron'));
+      let p = chuvi(r);
+      let s = dientich(r);
+      document.write(`Chu vi hinh tron la ${p} <br>`);
+      document.write(`Dien tich hinh tron la ${s}`);
+  }
+
+</script>

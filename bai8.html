@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dao nguoc mang</title>
+</head>
+<body onload="hienthi(this.value)">
+
+</body>
+</html>
+<script>
+  function daonguoc(arr) {
+    return arr.reverse();
+  }
+  function hienthi(array) {
+    array = [1,2,3,4,5];
+    let daomang = daonguoc(array);
+    alert(`Mang sau khi dao: ${daomang}`);
+  }
+
+</script>

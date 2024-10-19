@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doi cho 2 so nguyen</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  function swap( a, b ) {
+    return [b, a];
+  }
+  //
+  let num1 = parseInt(prompt('Nhap so thu nhat'));
+  let num2 = parseInt(prompt('Nhap so thu hai'));
+
+  [num1, num2] = swap(num1, num2);
+
+  alert(`After swap: ${num1}, ${num2}`);
+
+</script>
